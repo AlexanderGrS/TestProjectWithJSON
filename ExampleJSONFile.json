@@ -1,0 +1,77 @@
+{
+    "JSONfiles":[
+        {
+            "name":"Action1",
+            "resultOfExectuion":"",
+            "params":[
+                "Create file DotCom",
+                "Write in file DotCom text What is happaning in bordswell?",
+                "Create file NewCom",
+                "Go to Condition1"
+            ]
+        }, 
+        {           
+            "name":"Condition1",
+            "resultOfExectuion":"",
+            "params":[
+                "If current time less then 2022-01-02 15:04:05 go to Action3 else go to Action2"
+            ]
+        },
+        {
+            "name":"Action2",
+            "resultOfExectuion":"",
+            "params":[
+                "Delete file NewCom",
+                "Rename file DotCom to file BotCom",
+                "Go to Action4"
+            ]
+        },{
+            "name":"Action3",
+            "resultOfExectuion":"",
+            "params":[
+                "Get creation time of file BotCom",
+                "Go to Action4"
+            ]
+        },
+        {
+            "name":"Action4",
+            "resultOfExectuion":"",
+            "params":[
+                "Rename file BotCom to file ProperFile.txt",
+                "Create file DotCom",
+                "Write in file ProperFile.txt text \nI am complete now!",
+                "Go to Condition2"
+            ]
+        }, 
+        {           
+            "name":"Condition2",
+            "resultOfExectuion":"",
+            "params":[
+                "If time creation of file README.md equals 2023-03-30 15:04:05 go to Action5 else go to Action6"
+            ]
+        },
+        {
+            "name":"Action5",
+            "resultOfExectuion":"",
+            "params":[
+                "Write in file DotCom text \nI am complete Dummy!"
+            ]
+        },
+        {
+            "name":"Action6",
+            "resultOfExectuion":"",
+            "params":[
+                "Create file HelloWorld.go",
+                "Delete file DotCom",
+                "Go to Action7"
+            ]
+        },
+        {
+            "name":"Action7",
+            "resultOfExectuion":"",
+            "params":[
+                "Write in file HelloWorld.go text package main\n\nimport fmt //Нужно поставить кавычки\n\nfunc main(){\n    fmt.Println(Hello World!)\n//И здесь\n}"
+            ]
+        } 
+    ]
+}
